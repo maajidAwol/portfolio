@@ -87,8 +87,11 @@ export default function Navbar() {
             <Button
               className="bg-gradient-to-r from-[#0468D7] to-[#54C5F8] hover:from-[#0468D7]/90 hover:to-[#54C5F8]/90 text-white rounded-full shadow-md hoverable"
               size="sm"
+              asChild
             >
-              <Download className="mr-2 h-4 w-4" /> Download Cv
+              <Link href="/Abdulmajid-Awol(CV).pdf" target="_blank" download>
+              <Download className="mr-2 h-4 w-4" /> Download CV
+              </Link>
             </Button>
           </div>
         </nav>

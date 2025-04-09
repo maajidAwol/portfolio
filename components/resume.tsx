@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { Download, Briefcase, GraduationCap } from "lucide-react"
 import Image from "next/image"
-
+import Link from "next/link"
 export default function Resume() {
   const experiences = [
     {
@@ -83,7 +83,9 @@ export default function Resume() {
             size="lg"
             className="bg-gradient-to-r from-[#0468D7] to-[#54C5F8] hover:from-[#0468D7]/90 hover:to-[#54C5F8]/90 text-white rounded-full shadow-md"
           >
-            <Download className="mr-2 h-4 w-4" /> Download CV
+              <Link href="/Abdulmajid-Awol(CV).pdf" target="_blank" download>
+              <Download className="mr-2 h-4 w-4" /> Download CV
+            </Link>
           </Button>
         </motion.div>
 

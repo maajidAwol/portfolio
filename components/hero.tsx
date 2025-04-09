@@ -1,7 +1,7 @@
 "use client"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { ArrowDown, ExternalLink, Github } from "lucide-react"
+import { ArrowDown, Github, Linkedin } from "lucide-react"
 import { motion } from "framer-motion"
 import { TypeAnimation } from "react-type-animation"
 import { useEffect } from "react"
@@ -71,9 +71,9 @@ export default function Hero() {
               <div className="absolute inset-0 rounded-full border border-[#0468D7]/20 animate-spin-slow"></div>
 
               {/* Image container */}
-              <div className="absolute inset-4 rounded-full overflow-hidden border-2 border-[#0468D7]/20 shadow-lg backdrop-blur-sm">
+              <div className="absolute  inset-4 rounded-full overflow-hidden border-2 border-[#0468D7]/20 shadow-lg backdrop-blur-sm">
                 <Image
-                  src="/placeholder.svg?height=400&width=400"
+                  src="/photo.jpg"
                   alt="Abdulmajid Awol"
                   fill
                   className="object-cover"
@@ -83,7 +83,7 @@ export default function Hero() {
 
               {/* Social links */}
               <motion.a
-                href="https://github.com"
+                href="https://github.com/maajidAwol"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="absolute top-0 right-0 bg-white dark:bg-gray-900 p-2 rounded-full shadow-md hoverable"
@@ -95,15 +95,15 @@ export default function Hero() {
               </motion.a>
 
               <motion.a
-                href="https://example.com"
+                href="https://www.linkedin.com/in/maajidawol/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="absolute bottom-0 left-0 bg-white dark:bg-gray-900 p-2 rounded-full shadow-md hoverable"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                aria-label="Portfolio"
+                aria-label="LinkedIn"
               >
-                <ExternalLink className="h-5 w-5 text-[#54C5F8]" />
+                <Linkedin className="h-5 w-5 text-[#54C5F8]" />
               </motion.a>
             </div>
           </motion.div>
