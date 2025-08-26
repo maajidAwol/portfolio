@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { Github, Linkedin, Twitter, Mail, ArrowUp } from "lucide-react"
+import { Github, Linkedin, Mail, ArrowUp } from "lucide-react"
 import { motion } from "framer-motion"
 
 export default function Footer() {
@@ -20,7 +20,7 @@ export default function Footer() {
               </span>
             </Link>
             <p className="text-gray-600 dark:text-gray-400 mt-2 max-w-md transition-colors duration-300 text-sm">
-              Creating elegant digital experiences with a focus on performance, accessibility, and modern design.
+              Creating elegant digital experiences with a focus on performance, accessibility, modern design and AI automation.
             </p>
           </div>
 
@@ -35,7 +35,7 @@ export default function Footer() {
 
             <div className="flex space-x-3">
               <a
-                href="#"
+                href="https://github.com/maajidAwol"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white dark:bg-gray-900 p-2 rounded-md border border-gray-200 dark:border-gray-800 hover:border-[#0468D7] dark:hover:border-[#0468D7] transition-colors duration-300 hoverable"
@@ -44,7 +44,7 @@ export default function Footer() {
                 <Github className="h-5 w-5 text-gray-700 dark:text-gray-300 hover:text-[#0468D7] dark:hover:text-[#0468D7] transition-colors duration-300" />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/in/maajidawol/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white dark:bg-gray-900 p-2 rounded-md border border-gray-200 dark:border-gray-800 hover:border-[#0468D7] dark:hover:border-[#0468D7] transition-colors duration-300 hoverable"
@@ -52,17 +52,9 @@ export default function Footer() {
               >
                 <Linkedin className="h-5 w-5 text-gray-700 dark:text-gray-300 hover:text-[#0468D7] dark:hover:text-[#0468D7] transition-colors duration-300" />
               </a>
+
               <a
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-white dark:bg-gray-900 p-2 rounded-md border border-gray-200 dark:border-gray-800 hover:border-[#0468D7] dark:hover:border-[#0468D7] transition-colors duration-300 hoverable"
-                aria-label="Twitter"
-              >
-                <Twitter className="h-5 w-5 text-gray-700 dark:text-gray-300 hover:text-[#0468D7] dark:hover:text-[#0468D7] transition-colors duration-300" />
-              </a>
-              <a
-                href="mailto:contact@example.com"
+                href="mailto:maajidawol@gmail.com"
                 className="bg-white dark:bg-gray-900 p-2 rounded-md border border-gray-200 dark:border-gray-800 hover:border-[#0468D7] dark:hover:border-[#0468D7] transition-colors duration-300 hoverable"
                 aria-label="Email"
               >
@@ -74,7 +66,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-200 dark:border-gray-800 pt-6 mt-6 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-500 dark:text-gray-500 text-xs mb-4 md:mb-0 transition-colors duration-300">
-            © {new Date().getFullYear()} Abdulmajid Awol. All rights reserved.
+            © {new Date().getFullYear()} Abdulmajid Awol.
           </p>
 
           <motion.div
@@ -83,7 +75,7 @@ export default function Footer() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5 }}
           >
-            <Link
+            {/* <Link
               href="#"
               className="text-gray-600 dark:text-gray-400 hover:text-[#0468D7] dark:hover:text-[#0468D7] transition-colors duration-300"
             >
@@ -94,7 +86,7 @@ export default function Footer() {
               className="text-gray-600 dark:text-gray-400 hover:text-[#0468D7] dark:hover:text-[#0468D7] transition-colors duration-300"
             >
               Terms of Service
-            </Link>
+            </Link> */}
           </motion.div>
         </div>
       </div>

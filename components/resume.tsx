@@ -10,7 +10,7 @@ export default function Resume() {
     {
       title: "Mobile Application Developer",
       company: "Eskalate LLC",
-      logo: "/placeholder.svg?height=80&width=80", // Placeholder for company logo
+      logo: "/logos/escalate.jpg", // Eskalate logo
       period: "June 2024 - November 2024",
       description:
         "Led a team to build and optimize mobile apps using Flutter, REST APIs, and system native APIs. Created an e-commerce app with Clean Architecture. Applied Test-Driven Development (TDD) practices for critical components. Utilized Provider, Bloc, and Mockito for state management and testing.",
@@ -18,7 +18,7 @@ export default function Resume() {
     {
       title: "Full Stack Developer Intern",
       company: "Camara Education Ethiopia",
-      logo: "/placeholder.svg?height=80&width=80", // Placeholder for company logo
+      logo: "/logos/camara.png", // Camara logo
       period: "July 2023 - November 2023",
       description:
         "Developed educational platform used by Ethiopian schools, expanding access to quality education. The platform supplied digital study materials, including books and past exams, to students. Implemented front-end features that improved content access and site engagement.",
@@ -26,7 +26,7 @@ export default function Resume() {
     {
       title: "Full Stack Developer",
       company: "Upwork",
-      logo: "/placeholder.svg?height=80&width=80", // Placeholder for company logo
+      logo: "/logos/upwork.png", // Upwork logo
       period: "July 2024 - Present",
       description:
         "Working as a top-rated freelancer on Upwork, specializing in Full-Stack Development and Process Automation. Delivering high-quality solutions for clients across various industries, with expertise in web development, mobile applications, and automation tools.",
@@ -37,23 +37,23 @@ export default function Resume() {
     {
       degree: "Master's in Software Engineering | Fast Track Program",
       institution: "Addis Ababa Science and Technology University (AASTU)",
-      logo: "/placeholder.svg?height=80&width=80", // Placeholder for institution logo
+      logo: "/logos/aastu.png", // AASTU logo
       period: "December 2023 - July 2026",
       description:
-        "CGPA 3.75/4.0. Pursuing an advanced degree in Software Engineering through the Fast Track program, which enables students to begin their master's before completing bachelor's. Granted a scholarship for academic excellence. Focusing on advanced software engineering concepts, research methodologies, and specialized technical skills to develop innovative solutions for complex problems.",
+        "Pursuing an advanced degree in Software Engineering through the Fast Track program, which enables students to begin their master's before completing bachelor's. Granted a scholarship for academic excellence. Focusing on advanced software engineering concepts, research methodologies, and specialized technical skills to develop innovative solutions for complex problems.",
     },
     {
       degree: "Bachelor of Science in Software Engineering",
       institution: "Addis Ababa Science and Technology University (AASTU)",
-      logo: "/placeholder.svg?height=80&width=80", // Placeholder for institution logo
+      logo: "/logos/aastu.png", // AASTU logo
       period: "May 2021 - July 2025",
       description:
-        "CGPA 3.78/4.0. Comprehensive education in software engineering fundamentals, including programming paradigms, system design, database management, and software development methodologies. Developed strong analytical and problem-solving skills through practical projects and theoretical coursework in various computing disciplines.",
+        "Graduated with honor with CGPA of 3.78/4.0. Comprehensive education in software engineering fundamentals, including programming paradigms, system design, database management, and software development methodologies. Developed strong analytical and problem-solving skills through practical projects and theoretical coursework in various computing disciplines.",
     },
     {
       degree: "Software Engineering Trainee",
       institution: "Africa to Silicon Valley (A2SV)",
-      logo: "/placeholder.svg?height=80&width=80", // Placeholder for institution logo
+      logo: "/logos/a2sv.png", // A2SV logo
       period: "November 2023 - November 2024",
       description:
         "Participated in an intensive software engineering training program focused on data structures, algorithms, and problem-solving skills. Collaborated with peers on group projects to develop teamwork and communication skills. Awarded a gold medal for being a finalist in the A2SV Generative AI Hackathon for Africa, demonstrating excellence in AI application development.",

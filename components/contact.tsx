@@ -7,7 +7,7 @@ import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { Mail, Phone, MapPin, Github, Linkedin, Twitter, Send, CheckCircle } from "lucide-react"
+import { Mail, Phone, MapPin, Github, Linkedin, Send, CheckCircle } from "lucide-react"
 import { Alert, AlertDescription } from "@/components/ui/alert"
 import emailjs from "@emailjs/browser"
 
@@ -25,14 +25,17 @@ export default function Contact() {
 
   // Initialize EmailJS
   useEffect(() => {
-    // Initialize EmailJS with your public key
-    // Replace 'YOUR_PUBLIC_KEY' with your actual EmailJS public key
-    emailjs.init("YOUR_PUBLIC_KEY")
+      emailjs.init("zk9puILM9Ik9wRJEQ")
   }, [])
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target
-    setFormData((prev) => ({ ...prev, [name]: value }))
+    // Map EmailJS field names to formData properties
+    let fieldName = name
+    if (name === "from_name") fieldName = "name"
+    if (name === "from_email") fieldName = "email"
+    
+    setFormData((prev) => ({ ...prev, [fieldName]: value }))
   }
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -42,8 +45,11 @@ export default function Contact() {
 
     try {
       // Send email using EmailJS
-      // Replace 'YOUR_SERVICE_ID' and 'YOUR_TEMPLATE_ID' with your actual EmailJS service and template IDs
-      const result = await emailjs.sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", formRef.current!, "YOUR_PUBLIC_KEY")
+      const result = await emailjs.sendForm(
+        "service_mnwy9ra", 
+        "template_wos0nj5", 
+        formRef.current!
+      )
 
       if (result.status === 200) {
         // Reset form
@@ -116,7 +122,7 @@ export default function Contact() {
                   <h4 className="text-base font-semibold mb-1 text-gray-900 dark:text-white transition-colors duration-300">
                     Email
                   </h4>
-                  <p className="text-gray-600 dark:text-gray-400 transition-colors duration-300">contact@example.com</p>
+                  <p className="text-gray-600 dark:text-gray-400 transition-colors duration-300">maajidawol@gmail.com</p>
                 </div>
               </div>
 
@@ -128,7 +134,7 @@ export default function Contact() {
                   <h4 className="text-base font-semibold mb-1 text-gray-900 dark:text-white transition-colors duration-300">
                     Phone
                   </h4>
-                  <p className="text-gray-600 dark:text-gray-400 transition-colors duration-300">+1 (123) 456-7890</p>
+                  <p className="text-gray-600 dark:text-gray-400 transition-colors duration-300">+251 99 317 4585</p>
                 </div>
               </div>
 
@@ -140,7 +146,7 @@ export default function Contact() {
                   <h4 className="text-base font-semibold mb-1 text-gray-900 dark:text-white transition-colors duration-300">
                     Location
                   </h4>
-                  <p className="text-gray-600 dark:text-gray-400 transition-colors duration-300">San Francisco, CA</p>
+                  <p className="text-gray-600 dark:text-gray-400 transition-colors duration-300">Addis Ababa, Ethiopia</p>
                 </div>
               </div>
             </div>
@@ -151,26 +157,24 @@ export default function Contact() {
               </h4>
               <div className="flex space-x-3">
                 <a
-                  href="#"
+                  href="https://github.com/maajidAwol"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="bg-white dark:bg-gray-900 p-2 rounded-md border border-gray-200 dark:border-gray-800 hover:border-[#0468D7] dark:hover:border-[#0468D7] transition-colors duration-300 hoverable"
                   aria-label="GitHub"
                 >
                   <Github className="h-5 w-5 text-gray-700 dark:text-gray-300 hover:text-[#0468D7] dark:hover:text-[#0468D7] transition-colors duration-300" />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/in/maajidawol/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="bg-white dark:bg-gray-900 p-2 rounded-md border border-gray-200 dark:border-gray-800 hover:border-[#0468D7] dark:hover:border-[#0468D7] transition-colors duration-300 hoverable"
                   aria-label="LinkedIn"
                 >
                   <Linkedin className="h-5 w-5 text-gray-700 dark:text-gray-300 hover:text-[#0468D7] dark:hover:text-[#0468D7] transition-colors duration-300" />
                 </a>
-                <a
-                  href="#"
-                  className="bg-white dark:bg-gray-900 p-2 rounded-md border border-gray-200 dark:border-gray-800 hover:border-[#0468D7] dark:hover:border-[#0468D7] transition-colors duration-300 hoverable"
-                  aria-label="Twitter"
-                >
-                  <Twitter className="h-5 w-5 text-gray-700 dark:text-gray-300 hover:text-[#0468D7] dark:hover:text-[#0468D7] transition-colors duration-300" />
-                </a>
+
               </div>
             </div>
           </motion.div>
@@ -198,7 +202,7 @@ export default function Contact() {
                     </label>
                     <Input
                       id="name"
-                      name="name"
+                      name="from_name"
                       value={formData.name}
                       onChange={handleChange}
                       placeholder="John Doe"
@@ -216,7 +220,7 @@ export default function Contact() {
                     </label>
                     <Input
                       id="email"
-                      name="email"
+                      name="from_email"
                       type="email"
                       value={formData.email}
                       onChange={handleChange}
@@ -274,7 +278,7 @@ export default function Contact() {
                   <Alert className="bg-green-50 dark:bg-green-900/20 border-green-200 dark:border-green-800">
                     <CheckCircle className="h-4 w-4 text-green-600 dark:text-green-400" />
                     <AlertDescription className="text-green-600 dark:text-green-400">
-                      Thank you for contacting me!
+                      Thank you so much for contacting me! I truly appreciate you taking the time to reach out. I'll get back to you as soon as possible.
                     </AlertDescription>
                   </Alert>
                 )}

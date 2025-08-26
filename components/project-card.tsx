@@ -29,6 +29,8 @@ interface ProjectProps {
     techName: string | string[]
     period?: string
     details?: string
+    github?: string
+    demo?: string
   }
   index: number
 }
@@ -156,7 +158,11 @@ export default function ProjectCard({ project, index }: ProjectProps) {
             src={project.image || "/placeholder.svg"}
             alt={project.title}
             fill
-            className="object-cover transition-transform duration-500 ease-out"
+            className={`transition-transform duration-500 ease-out ${
+              project.title.toLowerCase().includes('mobile') 
+                ? 'object-contain bg-gray-50 dark:bg-gray-800' 
+                : 'object-cover'
+            }`}
             style={{
               transform: isHovered ? "scale(1.05)" : "scale(1)",
             }}
@@ -184,24 +190,32 @@ export default function ProjectCard({ project, index }: ProjectProps) {
               isHovered ? "opacity-100" : "opacity-0"
             }`}
           >
-            <motion.a
-              href="#"
-              className="p-2 rounded-full bg-white/90 text-gray-900 hover:bg-white transition-colors duration-200"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              aria-label="View source code"
-            >
-              <Github className="h-4 w-4" />
-            </motion.a>
-            <motion.a
-              href="#"
-              className="p-2 rounded-full bg-white/90 text-gray-900 hover:bg-white transition-colors duration-200"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              aria-label="Visit live site"
-            >
-              <ExternalLink className="h-4 w-4" />
-            </motion.a>
+            {project.github && (
+              <motion.a
+                href={project.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 rounded-full bg-white/90 text-gray-900 hover:bg-white transition-colors duration-200"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                aria-label="View source code"
+              >
+                <Github className="h-4 w-4" />
+              </motion.a>
+            )}
+            {project.demo && (
+              <motion.a
+                href={project.demo}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 rounded-full bg-white/90 text-gray-900 hover:bg-white transition-colors duration-200"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                aria-label="Visit live site"
+              >
+                <ExternalLink className="h-4 w-4" />
+              </motion.a>
+            )}
           </div>
         </div>
 

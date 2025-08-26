@@ -46,16 +46,16 @@ export default function Skills() {
     "Clean Architecture": <Layers className="h-5 w-5" />,
 
     // Databases
-    Firebase: <Database className="h-5 w-5" />,
     PostgreSQL: <Database className="h-5 w-5" />,
     MySQL: <Database className="h-5 w-5" />,
-    SQLite: <Database className="h-5 w-5" />,
+    Supabase: <Database className="h-5 w-5" />,
+    MongoDB: <Database className="h-5 w-5" />,
 
     // AI
     OpenAI: <Cpu className="h-5 w-5" />,
     Gemini: <Cpu className="h-5 w-5" />,
-    Snowflake: <Cloud className="h-5 w-5" />,
-    Langchain: <Workflow className="h-5 w-5" />,
+    Ollama: <Cpu className="h-5 w-5" />,
+    RAG: <Workflow className="h-5 w-5" />,
 
     // Other
     Git: <GitBranch className="h-5 w-5" />,
@@ -86,13 +86,13 @@ export default function Skills() {
     {
       title: "Databases",
       icon: <Database className="h-6 w-6" />,
-      skills: ["Firebase", "PostgreSQL", "MySQL", "SQLite"],
+      skills: ["PostgreSQL", "MySQL", "Supabase", "MongoDB"],
       delay: 0.4,
     },
     {
       title: "AI & Automation",
       icon: <Cpu className="h-6 w-6" />,
-      skills: ["OpenAI", "Gemini", "Snowflake", "Langchain"],
+      skills: ["OpenAI", "Gemini", "Ollama", "RAG"],
       delay: 0.5,
     },
     {
@@ -194,7 +194,7 @@ export default function Skills() {
                 className="flex flex-col items-center p-4 bg-white dark:bg-gray-900 rounded-md shadow-sm"
                 whileHover={{ y: -3 }}
               >
-                <span className="text-2xl font-bold text-[#0468D7]">5+</span>
+                <span className="text-2xl font-bold text-[#0468D7]">3+</span>
                 <span className="text-sm text-gray-600 dark:text-gray-400">Years Experience</span>
               </motion.div>
 
@@ -202,7 +202,7 @@ export default function Skills() {
                 className="flex flex-col items-center p-4 bg-white dark:bg-gray-900 rounded-md shadow-sm"
                 whileHover={{ y: -3 }}
               >
-                <span className="text-2xl font-bold text-[#0468D7]">50+</span>
+                <span className="text-2xl font-bold text-[#0468D7]">15+</span>
                 <span className="text-sm text-gray-600 dark:text-gray-400">Projects Completed</span>
               </motion.div>
 
@@ -210,7 +210,7 @@ export default function Skills() {
                 className="flex flex-col items-center p-4 bg-white dark:bg-gray-900 rounded-md shadow-sm"
                 whileHover={{ y: -3 }}
               >
-                <span className="text-2xl font-bold text-[#0468D7]">30+</span>
+                <span className="text-2xl font-bold text-[#0468D7]">5+</span>
                 <span className="text-sm text-gray-600 dark:text-gray-400">Happy Clients</span>
               </motion.div>
             </div>

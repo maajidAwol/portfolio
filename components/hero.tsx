@@ -152,13 +152,42 @@ export default function Hero() {
             </motion.div>
 
             <motion.p
-              className="text-lg md:text-xl text-gray-700 dark:text-gray-300 max-w-xl mb-8 transition-colors duration-300 font-light antialiased"
+              className="text-lg md:text-xl text-gray-700 dark:text-gray-300 max-w-xl mb-6 transition-colors duration-300 font-light antialiased"
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.7 }}
             >
-              Creating elegant digital experiences with a focus on performance, accessibility, and modern design.
+              Creating elegant digital experiences with a focus on performance, accessibility, modern design, and AI automation.
             </motion.p>
+
+            {/* Achievement badges */}
+            <motion.div
+              className="flex flex-wrap gap-2 mb-8 justify-center md:justify-start"
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.8 }}
+            >
+              <div className="flex items-center gap-1 px-2 py-1 bg-purple-500/10 dark:bg-purple-500/20 rounded-full">
+                <span className="text-xs">🎓</span>
+                <span className="text-xs font-medium text-purple-700 dark:text-purple-300">
+                  Honors Graduate • 3.78 GPA
+                </span>
+              </div>
+              
+              <div className="flex items-center gap-1 px-2 py-1 bg-orange-500/10 dark:bg-orange-500/20 rounded-full">
+                <span className="text-xs">🔥</span>
+                <span className="text-xs font-medium text-orange-700 dark:text-orange-300">
+                  A2SV Hackathon Finalist
+                </span>
+              </div>
+              
+              <div className="flex items-center gap-1 px-2 py-1 bg-green-500/10 dark:bg-green-500/20 rounded-full">
+                <span className="text-xs">⭐</span>
+                <span className="text-xs font-medium text-green-700 dark:text-green-300">
+                  Top-Rated Upwork Freelancer
+                </span>
+              </div>
+            </motion.div>
 
             <motion.div
               className="flex flex-col sm:flex-row justify-center md:justify-start gap-4 mt-8"
@@ -188,8 +217,8 @@ export default function Hero() {
               </Button>
             </motion.div>
 
-            {/* Tech stack badges */}
-            <motion.div
+            {/* Tech stack badges - Commented out to reduce clutter and avoid redundancy with project filters */}
+            {/* <motion.div
               className="flex flex-wrap gap-2 mt-8 justify-center md:justify-start"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -206,7 +235,7 @@ export default function Hero() {
                   {tech}
                 </motion.span>
               ))}
-            </motion.div>
+            </motion.div> */}
           </motion.div>
         </div>
       </div>

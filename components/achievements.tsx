@@ -12,60 +12,31 @@ export default function Achievements() {
  
   const achievements = [
     {
-      title: "A2SV Generative AI Hackathon Finalist",
-      category: "Competition",
-      date: "November 2023",
-      description: "Awarded a gold medal for being a finalist in the A2SV Generative AI Hackathon for Africa.",
-      icon: <Medal className="h-5 w-5" />,
-      color: "bg-yellow-500/10 text-yellow-600 dark:text-yellow-400",
-      image: "/placeholder.svg?height=600&width=800",
-    },
-    {
-      title: "Academic Excellence Scholarship",
-      category: "Academic",
-      date: "December 2023",
-      description: "Granted a scholarship for academic excellence to join the Fast Track program at AASTU.",
-      icon: <Award className="h-5 w-5" />,
-      color: "bg-purple-500/10 text-purple-600 dark:text-purple-400",
-      image: "/placeholder.svg?height=600&width=800",
-    },
-    {
-      title: "University Presidential Award",
-      category: "Academic",
-      date: "March 2021",
-      description: "Received the University's Exceptional Academic Performance Award for attaining a GPA of 3.96.",
-      icon: <Award className="h-5 w-5" />,
-      color: "bg-purple-500/10 text-purple-600 dark:text-purple-400",
-      image: "/placeholder.svg?height=600&width=800",
-    },
-    {
-      title: "Flutter Development Certification",
-      category: "Certification",
-      date: "2023",
-      description:
-        "Completed advanced Flutter development certification, demonstrating expertise in mobile app development.",
+      title: "A2SV Program Completion Certificate",
+      category: "Training",
+      date: "2024",
+      description: "Successfully completed the A2SV (Africa to Silicon Valley) intensive software engineering program, demonstrating proficiency in competitive programming, data structures, and algorithms.",
       icon: <Certificate className="h-5 w-5" />,
       color: "bg-blue-500/10 text-blue-600 dark:text-blue-400",
-      image: "/placeholder.svg?height=600&width=800",
+      image: "/certifcates/a2sv-completion.jpg",
     },
     {
-      title: "Technical Article Publication",
-      category: "Publication",
-      date: "2024",
-      description:
-        "Published article on 'Implementing Clean Architecture in Flutter Applications' in a leading tech blog.",
-      icon: <Newspaper className="h-5 w-5" />,
-      color: "bg-green-500/10 text-green-600 dark:text-green-400",
-      image: "/placeholder.svg?height=600&width=800",
+      title: "Graduated with Honors",
+      category: "Academic",
+      date: "2025",
+      description: "Graduated with honors achieving a cumulative GPA of 3.78, demonstrating exceptional academic performance and dedication to excellence in software engineering and computer science studies.",
+      icon: <Award className="h-5 w-5" />,
+      color: "bg-purple-500/10 text-purple-600 dark:text-purple-400",
+      image: "/certifcates/honor.jpg",
     },
     {
-      title: "Open Source Contribution Recognition",
-      category: "Community",
+      title: "A2SV Generative AI Hackathon Finalist",
+      category: "Competition",
       date: "2023",
-      description: "Recognized for significant contributions to open-source Flutter projects and developer tools.",
-      icon: <Lightbulb className="h-5 w-5" />,
-      color: "bg-orange-500/10 text-orange-600 dark:text-orange-400",
-      image: "/placeholder.svg?height=600&width=800",
+      description: "Achieved finalist recognition in the A2SV Generative AI Hackathon, demonstrating innovation and technical excellence in developing cutting-edge AI solutions. Competed among top participants to showcase advanced generative AI applications.",
+      icon: <Medal className="h-5 w-5" />,
+      color: "bg-yellow-500/10 text-yellow-600 dark:text-yellow-400",
+      image: "/certifcates/hackathon.jpg",
     },
   ]
 
@@ -110,7 +81,7 @@ export default function Achievements() {
                   src={achievement.image || "/placeholder.svg"}
                   alt={`${achievement.title} certificate`}
                   fill
-                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                  className="object-contain bg-white transition-transform duration-300 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
                   <ExternalLink className="h-8 w-8 text-white" />
