@@ -30,10 +30,10 @@ export default function Achievements() {
       image: "/certifcates/honor.jpg",
     },
     {
-      title: "A2SV Generative AI Hackathon Finalist",
+      title: "A2SV Generative AI Hackathon Top 9",
       category: "Competition",
       date: "2023",
-      description: "Achieved finalist recognition in the A2SV Generative AI Hackathon, demonstrating innovation and technical excellence in developing cutting-edge AI solutions. Competed among top participants to showcase advanced generative AI applications.",
+      description: "Ranked in the top 9 at the A2SV Generative AI for Africa Hackathon among 3,700+ participants from 47 countries, highlighting its potential to improve exam outcomes. Demonstrated exceptional innovation and technical excellence in developing cutting-edge AI solutions for educational impact.",
       icon: <Medal className="h-5 w-5" />,
       color: "bg-yellow-500/10 text-yellow-600 dark:text-yellow-400",
       image: "/certifcates/hackathon.jpg",

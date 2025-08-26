@@ -56,7 +56,7 @@ export default function Resume() {
       logo: "/logos/a2sv.png", // A2SV logo
       period: "November 2023 - November 2024",
       description:
-        "Participated in an intensive software engineering training program focused on data structures, algorithms, and problem-solving skills. Collaborated with peers on group projects to develop teamwork and communication skills. Awarded a gold medal for being a finalist in the A2SV Generative AI Hackathon for Africa, demonstrating excellence in AI application development.",
+        "Participated in an intensive software engineering training program focused on data structures, algorithms, and problem-solving skills. Collaborated with peers on group projects to develop teamwork and communication skills. Ranked in the top 9 at the A2SV Generative AI for Africa Hackathon among 3,700+ participants from 47 countries, demonstrating excellence in AI application development.",
     },
   ]
 
@@ -82,8 +82,9 @@ export default function Resume() {
           <Button
             size="lg"
             className="bg-gradient-to-r from-[#0468D7] to-[#54C5F8] hover:from-[#0468D7]/90 hover:to-[#54C5F8]/90 text-white rounded-full shadow-md"
+            asChild
           >
-              <Link href="/Abdulmajid-Awol(CV).pdf" target="_blank" download>
+            <Link href="/Abdulmajid-Awol(CV).pdf" target="_blank" download>
               <Download className="mr-2 h-4 w-4" /> Download CV
             </Link>
           </Button>

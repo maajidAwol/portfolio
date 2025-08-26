@@ -22,7 +22,12 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Abdulmajid | Software Engineer",
   description: "Full-stack web and mobile app developer with AI integration experience",
-    generator: 'v0.dev'
+  generator: 'v0.dev',
+  icons: {
+    icon: '/favicon.png',
+    shortcut: '/favicon.png',
+    apple: '/favicon.png',
+  },
 }
 
 export default function RootLayout({
@@ -43,6 +48,3 @@ export default function RootLayout({
     </html>
   )
 }
-
-
-import './globals.css'
