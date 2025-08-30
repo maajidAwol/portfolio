@@ -1,0 +1,96 @@
+ATS-OPTIMIZED PROJECT DESCRIPTIONS FOR CV
+Using Google's XYZ Method: Accomplished [X] as measured by [Y], by doing [Z]
+
+================================================================================
+
+PROJECTS SECTION
+
+1. MIILTOO KNOWLEDGE COMPANION (August 2023 - November 2024)
+   Technologies: AI/ML, Python, Flask, OpenAI GPT-3.5, LangChain, MySQL, React
+
+   • Accomplished improved student engagement and learning outcomes as measured by personalized quiz completion rates and interactive study sessions, by developing an AI-powered educational platform featuring intelligent chatbots, adaptive quizzes, and interactive PDF learning tools
+
+   • Achieved enhanced textbook comprehension as measured by student feedback and learning assessment metrics, by implementing tailored AI chatbots that dynamically match educational content to individual learning patterns
+
+   • Delivered scalable educational infrastructure as measured by platform accessibility across multiple schools, by architecting backend systems using Flask, MySQL, and OpenAI API integration
+
+   • Led cross-functional development team as measured by successful project delivery within timeline, by managing full-stack development lifecycle from ideation to production deployment
+
+2. MEETING VIDEO AUTOMATION PIPELINE FOR CRM (2024)
+   Technologies: Next.js, Windmill.dev, FFmpeg, ElevenLabs TTS, PostgreSQL, Redis
+
+   • Accomplished 80% reduction in manual processing time as measured by workflow completion metrics (2 hours → 15 minutes per video), by architecting an end-to-end automation pipeline for meeting video processing and transcription
+
+   • Achieved consistent 15-minute turnaround times as measured by processing speed benchmarks, by implementing Redis-powered asynchronous processing queues and FFmpeg optimization workflows
+
+   • Delivered enhanced customer engagement capabilities as measured by 50+ weekly meeting processing capacity, by building interactive Next.js playback portal with timestamp-synced commenting and automated transcription features
+
+3. TUBESTATS ANALYTICS PLATFORM (2023 - 2024)
+   Technologies: Next.js, JavaScript, Tailwind CSS, MySQL, Redux, YouTube Data API, Perplexity AI
+
+   • Accomplished comprehensive revenue analysis for 3M+ subscriber channels as measured by financial report accuracy and data coverage, by building full-stack analytics platform with AI-powered financial intelligence integration
+
+   • Delivered authoritative financial insights as measured by integration with trusted sources (NetWorthSpot, SocialBlade, Forbes), by implementing Perplexity AI real-time web search API for definitive revenue estimates
+
+   • Achieved automated data processing efficiency as measured by Cron job performance and API rate limit handling, by developing intelligent fallback systems with Docker containerization and GitHub Actions CI/CD pipeline
+
+4. ENTERPRISE CUSTOMER FEEDBACK & ANALYTICS PLATFORM (2024)
+   Technologies: Next.js 15, TypeScript, Supabase, Recharts, AES-256 Encryption
+
+   • Accomplished 40% increase in feedback measurement accuracy as measured by NPS calculation precision and sentiment analysis validation, by developing enterprise-grade feedback platform with advanced analytics and security features
+
+   • Achieved 80% reduction in collection friction as measured by user engagement metrics and completion rates, by implementing one-click emoji-based feedback system with multi-language support
+
+   • Delivered GDPR-compliant security infrastructure as measured by encryption standards and compliance audit results, by implementing AES-256 encryption protocols with tamper-proof URLs and 24-hour token expiration
+
+5. GEMINI DART TEST GENERATOR (2024)
+   Technologies: AI/ML, Dart, Large Language Models, package:coverage
+
+   • Accomplished automated test generation for Dart classes as measured by test coverage improvements and code quality metrics, by developing AI-powered CLI tool leveraging Large Language Models for intelligent test creation
+
+   • Delivered comprehensive testing coverage as measured by normal cases, edge cases, and error condition handling, by implementing intelligent import management and dependency resolution
+
+   • Demonstrated AI innovation in software development as measured by GSoC 2025 proposal acceptance criteria, by showcasing transformative potential of AI-assisted development tools
+
+6. FLUTTER CLEAN ARCHITECTURE VS CODE EXTENSION (2023)
+   Technologies: Node.js, Flutter, VS Code Extension API
+
+   • Accomplished streamlined Flutter development workflow as measured by boilerplate code generation speed and developer productivity, by building custom VS Code extension automating Clean Architecture implementation
+
+   • Delivered modular codebase structure automation as measured by folder organization consistency and architecture compliance, by implementing one-command feature creation and removal for architectural layers
+
+   • Enhanced development efficiency as measured by scaffold generation time and code structure quality, by automating BLoC, use cases, repositories, and architectural pattern creation
+
+7. CONNECTX BACKEND-AS-A-SERVICE PLATFORM (2023 - 2024)
+   Technologies: Django, Django REST Framework, PostgreSQL, JWT Authentication, Next.js
+
+   • Accomplished scalable multi-tenant e-commerce infrastructure as measured by successful merchant onboarding and platform stability, by architecting robust backend-as-a-service platform with comprehensive order and payment processing
+
+   • Delivered reduced setup complexity as measured by onboarding time reduction and merchant satisfaction, by implementing sophisticated JWT authentication system and comprehensive API endpoint architecture
+
+   • Led development team to successful delivery as measured by project timeline adherence and feature completion, by managing full-stack development lifecycle from architecture design to production deployment
+
+8. CONNECTX MOBILE APP (2023 - 2024)
+   Technologies: Flutter, Django REST Framework, BLoC State Management, JWT Authentication
+
+   • Accomplished cross-platform mobile commerce solution as measured by Android and iOS compatibility and user experience consistency, by developing comprehensive e-commerce mobile application using Flutter Clean Architecture
+
+   • Delivered seamless shopping experience as measured by user engagement metrics and transaction completion rates, by implementing real-time order tracking, secure payment processing, and intuitive mobile-first interface
+
+   • Enhanced accessibility and user experience as measured by platform reach and user satisfaction scores, by optimizing responsive design for mobile-first users with comprehensive order management workflows
+
+================================================================================
+
+KEY TECHNICAL SKILLS DEMONSTRATED:
+AI/ML: OpenAI GPT-3.5, LangChain, Perplexity AI, Large Language Models, ElevenLabs TTS
+Backend: Django, Flask, Node.js, PostgreSQL, MySQL, Redis, JWT Authentication
+Frontend: React, Next.js, Flutter, TypeScript, JavaScript, Tailwind CSS
+DevOps: Docker, GitHub Actions CI/CD, Windmill.dev, FFmpeg, Cron Jobs
+Security: AES-256 Encryption, GDPR Compliance, Tamper-proof Systems
+
+COPY-PASTE TIPS FOR CV:
+- Select 3-5 most relevant projects for each job application
+- Customize technology emphasis based on job requirements
+- Maintain bullet point format for ATS compatibility
+- Include quantified metrics to demonstrate impact
+- Reorder projects based on relevance to target role
