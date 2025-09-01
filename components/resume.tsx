@@ -38,7 +38,7 @@ export default function Resume() {
       degree: "Master's in Software Engineering | Fast Track Program",
       institution: "Addis Ababa Science and Technology University (AASTU)",
       logo: "/logos/aastu.png", // AASTU logo
-      period: "December 2023 - July 2026",
+      period: "January 2024 - February 2027",
       description:
         "Pursuing an advanced degree in Software Engineering through the Fast Track program, which enables students to begin their master's before completing bachelor's. Granted a scholarship for academic excellence. Focusing on advanced software engineering concepts, research methodologies, and specialized technical skills to develop innovative solutions for complex problems.",
     },
